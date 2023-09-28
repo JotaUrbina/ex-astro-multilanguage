@@ -1,0 +1,47 @@
+{
+  "card-1": {
+    "id": "1",
+    "name": "Daniel Clifford",
+    "status": "Graduado Verificado",
+    "title": "Recibí una oferta de trabajo a mitad del curso, y las materias que aprendí estaban actualizadas, si no más, en la empresa a la que me uní. Honestamente, siento que cada centavo que invertí valió la pena.",
+    "txt": "“Fui técnico en emergencias médicas (EMT) durante muchos años antes de unirme al bootcamp. Había estado buscando hacer una transición y había escuchado a algunas personas que tuvieron una experiencia increíble aquí. Me inscribí en el curso introductorio gratuito y lo encontré increíblemente divertido. Me inscribí poco después. Las siguientes 12 semanas fueron las mejores, y al mismo tiempo, las más agotadoras de mi vida. Desde que completé el curso, he logrado cambiar de carrera y ahora trabajo como Ingeniero de Software en una startup de realidad virtual.“",
+    "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-daniel_pxinia.jpg",
+    "color": "violet"
+  },
+  "card-2": {
+    "id": "2",
+    "name": "Jonathan Walters",
+    "status": "Graduado Verificado",
+    "title": "El equipo fue muy solidario y me mantuvo motivado.",
+    "txt": "“Comencé como un principiante total con prácticamente ninguna habilidad de programación. Ahora trabajo como ingeniero móvil para una gran empresa. Esta fue una de las mejores inversiones que he hecho en mí mismo.”",
+    "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jonathan_dcw1nh.jpg",
+    "color": "gray"
+  },
+  "card-3": {
+    "id": "3",
+    "name": "Kira Whittle",
+    "status": "Graduado Verificado",
+    "title": "Una experiencia que cambia la vida. ¡Altamente recomendado!",
+    "txt": "“Antes de unirme al bootcamp, nunca había escrito una línea de código. Necesitaba una estructura de profesionales que pudieran ayudarme a aprender programación paso a paso. Me animó a inscribirme un antiguo alumno suyo que solo podía decir cosas maravillosas sobre el programa. El currículo completo y el personal no me decepcionaron. Fueron muy prácticos y nunca tuve que esperar mucho tiempo para recibir ayuda. El proyecto de equipo ágil, en particular, fue excepcional. Llevó mi aprendizaje al siguiente nivel de una manera que ningún tutorial podría haber logrado. De hecho, a menudo lo mencioné en entrevistas como un ejemplo de mi experiencia en desarrollo. Sin duda, me ayudó a conseguir un trabajo como desarrollador full-stack después de recibir múltiples ofertas. ¡Lo recomiendo al 100%!”",
+    "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-kira_jgylsy.jpg",
+    "color": "white"
+  },
+  "card-4": {
+    "id": "4",
+    "name": "Jeanette Harmon",
+    "status": "Graduado Verificado",
+    "title": "En general, una experiencia maravillosa y gratificante.",
+    "txt": "“¡Gracias por la maravillosa experiencia! Ahora tengo un trabajo que realmente disfruto y gano un buen salario haciendo algo que amo.”",
+    "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jeanette_zzg0nf.jpg",
+    "color": "white"
+  },
+  "card-5": {
+    "id": "5",
+    "name": "Patrick Abrams",
+    "status": "Graduado Verificado",
+    "title": "Un increíble apoyo educativo por parte de los asistentes de enseñanza (TAs) que también completaron el bootcamp. Obtener orientación de ellos y aprender de sus experiencias fue sencillo.",
+    "txt": "“El personal parece realmente preocupado por mi progreso, lo cual encuentro muy refrescante. El programa me dio la confianza necesaria para poder salir al mundo y presentarme como un desarrollador junior capaz. El nivel está por encima del resto. Obtendrás la atención personal que necesitas de una increíble comunidad de personas inteligentes y sorprendentes.”",
+    "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-patrick_aolbjy.jpg",
+    "color": "black"
+  }
+}

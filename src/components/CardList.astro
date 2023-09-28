@@ -1,72 +1,112 @@
 ---
 import Card from "./Card.astro";
-const data = [
-  {
-    id: "1",
-    name: "Daniel Clifford",
-    status: "Verified Graduate",
-    title:
-      "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.",
-    txt: "“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup.”",
-    img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-daniel_pxinia.jpg",
-    color: "violet",
-  },
-  {
-    id: "2",
-    name: "Jonathan Walters",
-    status: "Verified Graduate",
-    title:
-      "The team was very supportive and kept me motivated",
-    txt: "“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”",
-    img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jonathan_dcw1nh.jpg",
-    color: "gray",
-  },
-  {
-    id: "3",
-    name: "Kira Whittle",
-    status: "Verified Graduate",
-    title:
-      "Such a life-changing experience. Highly recommended!",
-    txt: "“Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend!”",
-    img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-kira_jgylsy.jpg",
-    color: "white",
-  },
-  {
-    id: "4",
-    name: "Jeanette Harmon",
-    status: "Verified Graduate",
-    title: "An overall wonderful and rewarding experience",
-    txt: "“Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love.”",
-    img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jeanette_zzg0nf.jpg",
-    color: "white",
-  },
-  {
-    id: "5",
-    name: "Patrick Abrams",
-    status: "Verified Graduate",
-    title:
-      "Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.",
-    txt: "“The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people.”",
-    img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-patrick_aolbjy.jpg",
-    color: "black",
-  },
-];
+import dataEng from "../../public/locales/en/translation.json";
+import i18next, { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+
+// const data = [
+//   {
+//     id: "1",
+//     name: "Daniel Clifford",
+//     status: "Verified Graduate",
+//     title:
+//       "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.",
+//     txt: "“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup.”",
+//     img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-daniel_pxinia.jpg",
+//     color: "violet",
+//   },
+//   {
+//     id: "2",
+//     name: "Jonathan Walters",
+//     status: "Verified Graduate",
+//     title:
+//       "The team was very supportive and kept me motivated",
+//     txt: "“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”",
+//     img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jonathan_dcw1nh.jpg",
+//     color: "gray",
+//   },
+//   {
+//     id: "3",
+//     name: "Kira Whittle",
+//     status: "Verified Graduate",
+//     title:
+//       "Such a life-changing experience. Highly recommended!",
+//     txt: "“Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend!”",
+//     img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-kira_jgylsy.jpg",
+//     color: "white",
+//   },
+//   {
+//     id: "4",
+//     name: "Jeanette Harmon",
+//     status: "Verified Graduate",
+//     title: "An overall wonderful and rewarding experience",
+//     txt: "“Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love.”",
+//     img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jeanette_zzg0nf.jpg",
+//     color: "white",
+//   },
+//   {
+//     id: "5",
+//     name: "Patrick Abrams",
+//     status: "Verified Graduate",
+//     title:
+//       "Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.",
+//     txt: "“The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people.”",
+//     img: "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-patrick_aolbjy.jpg",
+//     color: "black",
+//   },
+// ];
 ---
 
 <section
   class="w-11/12 p-4 grid grid-rows-2 grid-cols-4 gap-4"
 >
   {
-    data.map((ele) => (
+    (
       <Card
-        id={ele.id}
-        name={ele.name}
-        status={ele.status}
-        title={ele.title}
-        txt={ele.txt}
-        img={ele.img}
-        color={ele.color}
+        id="card-1.id"
+        name="card-1.name"
+        status="card-1.status"
+        title="card-1.title"
+        txt="card-1.txt"
+        img="card-1.img"
+        color="card-1.color"
       />
-    ))
+      <Card
+        id="card-2.id"
+        name="card-2.name"
+        status="card-2.status"
+        title="card-2.title"
+        txt="card-2.txt"
+        img="card-2.img"
+        color="card-2.color"
+      />
+      <Card
+        id="card-3.id"
+        name="card-3.name"
+        status="card-3.status"
+        title="card-3.title"
+        txt="card-3.txt"
+        img="card-3.img"
+        color="card-3.color"
+      />
+      <Card
+        id="card-4.id"
+        name="card-4.name"
+        status="card-4.status"
+        title="card-4.title"
+        txt="card-4.txt"
+        img="card-4.img"
+        color="card-4.color"
+      />
+      <Card
+        id="card-5.id"
+        name="card-5.name"
+        status="card-5.status"
+        title="card-5.title"
+        txt="card-5.txt"
+        img="card-5.img"
+        color="card-5.color"
+      />
+    )
   }
 </section>
