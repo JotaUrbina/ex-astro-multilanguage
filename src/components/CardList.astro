@@ -9,7 +9,6 @@ import { t } from "i18next";
 // Por lo tanto, t("cards", { returnObjects: true }) está obteniendo el valor asociado con la clave "cards" en los recursos de traducción y devolviéndolo como un objeto o un array en la variable cards.
 
 let cards = t("cards", { returnObjects: true });
-console.log(cards);
 ---
 
 <section
@@ -29,57 +28,3 @@ console.log(cards);
     ))
   }
 </section>
-<!-- 
-<section
-  class="w-11/12 p-4 grid grid-rows-2 grid-cols-4 gap-4"
->
-  {
-    (
-      <Card
-        id="card-1.id"
-        name="card-1.name"
-        status="card-1.status"
-        title="card-1.title"
-        txt="card-1.txt"
-        img="card-1.img"
-        color="card-1.color"
-      />
-      <Card
-        id="card-2.id"
-        name="card-2.name"
-        status="card-2.status"
-        title="card-2.title"
-        txt="card-2.txt"
-        img="card-2.img"
-        color="card-2.color"
-      />
-      <Card
-        id="card-3.id"
-        name="card-3.name"
-        status="card-3.status"
-        title="card-3.title"
-        txt="card-3.txt"
-        img="card-3.img"
-        color="card-3.color"
-      />
-      <Card
-        id="card-4.id"
-        name="card-4.name"
-        status="card-4.status"
-        title="card-4.title"
-        txt="card-4.txt"
-        img="card-4.img"
-        color="card-4.color"
-      />
-      <Card
-        id="card-5.id"
-        name="card-5.name"
-        status="card-5.status"
-        title="card-5.title"
-        txt="card-5.txt"
-        img="card-5.img"
-        color="card-5.color"
-      />
-    )
-  }
-</section> -->
