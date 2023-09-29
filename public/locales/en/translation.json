@@ -1,5 +1,5 @@
-{
-  "card-1": {
+[
+  {
     "id": "1",
     "name": "Daniel Clifford",
     "status": "Verified Graduate",
@@ -8,7 +8,7 @@
     "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-daniel_pxinia.jpg",
     "color": "violet"
   },
-  "card-2": {
+  {
     "id": "2",
     "name": "Jonathan Walters",
     "status": "Verified Graduate",
@@ -17,7 +17,7 @@
     "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jonathan_dcw1nh.jpg",
     "color": "gray"
   },
-  "card-3": {
+  {
     "id": "3",
     "name": "Kira Whittle",
     "status": "Verified Graduate",
@@ -26,7 +26,7 @@
     "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-kira_jgylsy.jpg",
     "color": "white"
   },
-  "card-4": {
+  {
     "id": "4",
     "name": "Jeanette Harmon",
     "status": "Verified Graduate",
@@ -35,7 +35,7 @@
     "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-jeanette_zzg0nf.jpg",
     "color": "white"
   },
-  "card-5": {
+  {
     "id": "5",
     "name": "Patrick Abrams",
     "status": "Verified Graduate",
@@ -44,4 +44,4 @@
     "img": "https://res.cloudinary.com/jurbina/image/upload/v1695845508/ex-astro-multilanguage/image-patrick_aolbjy.jpg",
     "color": "black"
   }
-}
+]
